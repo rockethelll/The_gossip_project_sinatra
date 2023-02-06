@@ -5,3 +5,5 @@ gem 'pry'
 gem 'prettier'
 gem 'rubocop'
 gem 'sinatra'
+gem 'csv'
+gem "shotgun", "~> 0.9.2"
