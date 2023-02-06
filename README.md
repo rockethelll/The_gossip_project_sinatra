@@ -5,7 +5,7 @@
 ## Comment ca marche
 
 - Lance ton serveur avec la commande ```shotgun -p4567```
-- Connecte toi sur ton serveur local &rarr; [http://localhost:4567]
+- Connecte toi sur ton serveur local &rarr; [accès direct](http://localhost:4567)
 - Laisse toi guider et amuse toi avec les potins du coin ;)
 
 ## Les fonctionnalités disponibles pour le moment
