@@ -4,15 +4,16 @@
   </head>
   <body>
     <h1>Nous te souhaitons la bienvenue, chère grenouille de bénitier ! </h1>
-    <p>Pour le moment il n'y a encore aucun potin à te raconter</p>
     <a href="/gossips/new/">Créer un nouveau Gossip</a>
 
-    <% gossips.each do |gossip| %>
+    <h2>Les potins disponibles</h2>
+    <% gossips.each_with_index do |gossip, i| %>
   <p>
     <%= gossip.author %><br/>
-    <%= gossip.content %>
+    <%= gossip.content %><br/>
+    <a href="/gossips/<%= i %>" >Voir le potin</a>
   </p>
-<% end %>
+  <% end %>
 
   </body>
 </html>

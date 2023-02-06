@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'pry'
 require 'csv'
 # Create gossip class
@@ -18,12 +19,15 @@ class Gossip
 
   def self.all
     all_gossips = []
-    CSV.read("./db/gossip.csv").each do |csv_line|
+    CSV.read('./db/gossip.csv').each do |csv_line|
       all_gossips << Gossip.new(csv_line[0], csv_line[1])
     end
-    return all_gossips
+    all_gossips
   end
-  
+
+  def self.find(id)
+    p all[id]
+  end
 end
 
 # binding.pry
